@@ -1,0 +1,118 @@
+2021-11-23 19:57:40.703 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
+2021-11-23 19:57:41.248 +05:30 [INF] Saved 2 entities to in-memory store.
+2021-11-23 19:57:41.708 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-23 19:57:41.719 +05:30 [INF] Hosting environment: Development
+2021-11-23 19:57:41.723 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Web
+2021-11-23 19:57:41.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/weatherforecast - -
+2021-11-23 19:57:41.969 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-23 19:57:42.037 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-23 19:57:42.058 +05:30 [INF] Executing ObjectResult, writing value of type 'UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast[]'.
+2021-11-23 19:57:42.163 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 112.0298ms
+2021-11-23 19:57:42.175 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-23 19:57:42.203 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/weatherforecast - - - 200 - application/json;+charset=utf-8 443.5799ms
+2021-11-23 19:57:42.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/favicon.ico - -
+2021-11-23 19:57:42.857 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/favicon.ico - - - 404 - - 21.6239ms
+2021-11-23 19:58:19.004 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2021-11-23 19:58:19.142 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 132.6186ms
+2021-11-23 19:58:19.167 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2021-11-23 19:58:19.167 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2021-11-23 19:58:19.178 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2021-11-23 19:58:19.251 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-23 19:58:19.255 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-11-23 19:58:19.262 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 95.3052ms
+2021-11-23 19:58:19.271 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 93.0373ms
+2021-11-23 19:58:19.304 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-11-23 19:58:19.332 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 165.7858ms
+2021-11-23 19:58:20.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2021-11-23 19:58:20.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 6.4311ms
+2021-11-23 19:58:20.144 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2021-11-23 19:58:20.147 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2021-11-23 19:58:20.147 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2021-11-23 19:58:20.184 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-23 19:58:20.191 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-11-23 19:58:20.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 80.1274ms
+2021-11-23 19:58:20.250 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 102.9013ms
+2021-11-23 19:58:20.256 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-11-23 19:58:20.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 157.4157ms
+2021-11-23 19:58:20.649 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2021-11-23 19:58:20.812 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 162.7577ms
+2021-11-23 20:10:43.582 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:10:43.589 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:10:43.593 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:10:43.600 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 17.8833ms
+2021-11-23 20:11:05.573 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:11:05.586 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:11:05.590 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:11:05.598 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 24.1083ms
+2021-11-23 20:12:11.386 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:12:11.396 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:12:11.435 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:12:11.443 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 56.2391ms
+2021-11-23 20:14:44.104 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
+2021-11-23 20:14:44.761 +05:30 [INF] Saved 2 entities to in-memory store.
+2021-11-23 20:14:45.056 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-23 20:14:45.064 +05:30 [INF] Hosting environment: Development
+2021-11-23 20:14:45.067 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Web
+2021-11-23 20:14:45.105 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/weatherforecast - -
+2021-11-23 20:14:45.264 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-23 20:14:45.309 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-23 20:14:45.327 +05:30 [INF] Executing ObjectResult, writing value of type 'UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast[]'.
+2021-11-23 20:14:45.406 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 81.0563ms
+2021-11-23 20:14:45.428 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-23 20:14:45.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/weatherforecast - - - 200 - application/json;+charset=utf-8 360.4511ms
+2021-11-23 20:14:47.679 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2021-11-23 20:14:47.810 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 131.1028ms
+2021-11-23 20:14:47.828 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2021-11-23 20:14:47.828 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2021-11-23 20:14:47.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2021-11-23 20:14:47.889 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-23 20:14:47.899 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-11-23 20:14:47.907 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-11-23 20:14:47.912 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 83.9432ms
+2021-11-23 20:14:47.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 93.7260ms
+2021-11-23 20:14:47.959 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 131.0823ms
+2021-11-23 20:14:48.904 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2021-11-23 20:14:48.913 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 8.1969ms
+2021-11-23 20:14:48.953 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2021-11-23 20:14:48.959 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2021-11-23 20:14:48.959 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2021-11-23 20:14:48.982 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-11-23 20:14:48.986 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-11-23 20:14:48.995 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-11-23 20:14:49.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143632 text/css 58.7097ms
+2021-11-23 20:14:49.077 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 117.4784ms
+2021-11-23 20:14:49.082 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 122.6516ms
+2021-11-23 20:14:49.404 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2021-11-23 20:14:49.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.5637ms
+2021-11-23 20:14:54.557 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:14:54.568 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:14:54.572 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:14:54.580 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 22.5188ms
+2021-11-23 20:14:58.267 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:14:58.273 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:14:58.276 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:14:58.280 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 13.1890ms
+2021-11-23 20:18:29.560 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
+2021-11-23 20:18:30.100 +05:30 [INF] Saved 2 entities to in-memory store.
+2021-11-23 20:18:30.335 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-23 20:18:30.343 +05:30 [INF] Hosting environment: Development
+2021-11-23 20:18:30.346 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Web
+2021-11-23 20:18:30.394 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/weatherforecast - -
+2021-11-23 20:18:30.512 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-23 20:18:30.550 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-23 20:18:30.575 +05:30 [INF] Executing ObjectResult, writing value of type 'UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast[]'.
+2021-11-23 20:18:30.671 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 104.7216ms
+2021-11-23 20:18:30.677 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-23 20:18:30.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/weatherforecast - - - 200 - application/json;+charset=utf-8 317.3206ms
+2021-11-23 20:19:14.933 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:19:14.978 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:19:14.981 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:19:14.986 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 55.4335ms
+2021-11-23 20:27:06.682 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:27:06.693 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:27:06.696 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:27:06.701 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 18.7809ms
+2021-11-23 20:27:24.963 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - -
+2021-11-23 20:27:24.966 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:27:24.971 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2021-11-23 20:27:24.976 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44344/api/userprofile/createuser - - - 405 - - 13.0072ms

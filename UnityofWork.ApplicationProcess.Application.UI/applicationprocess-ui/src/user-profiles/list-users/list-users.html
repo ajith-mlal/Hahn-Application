@@ -1,0 +1,30 @@
+<template>
+    <div class="row">
+        <div class="col-11">
+            <h1>List all Users</h1>
+        </div>
+        <div class="col-1">
+            <button click.delegate="onAdd($event)" type="button" class="btn btn-info">Add User</button>
+        </div>
+    </div>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>E-mail</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr repeat.for="user of userdata">
+                <td>${user.firstName} ${user.lastName}</td>
+                <td>${user.age}</td>
+                <td><a href="mailto:${user.email}">${user.email}</a></td>
+                <td><a route-href="route: detail;
+                params.bind: {id:user.userId}">View</a></td>
+            </tr>
+        </tbody>
+    </table>
+</template>
