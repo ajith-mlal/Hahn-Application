@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 using System.Collections.Generic;
-namespace UnityofWork.ApplicationProcess.July2021.Data.Entities
+namespace Hahn.ApplicationProcess.July2021.Data.Entities
 {
     public class UserProfile
     {
@@ -14,6 +14,7 @@ namespace UnityofWork.ApplicationProcess.July2021.Data.Entities
         public string LastName { get; set; }
         public string Email { get; set; }
         public virtual ICollection<UserAssets> UserAssets { get; set; }
+        public virtual UserAddress UserAddress { get; set; }
     }
 
 

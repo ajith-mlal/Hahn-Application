@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace UnityofWork.ApplicationProcess.July2021.Domain.Dto
+namespace Hahn.ApplicationProcess.July2021.Domain.Dto
 {
     public class UserProfileDto
     {
@@ -11,5 +11,6 @@ namespace UnityofWork.ApplicationProcess.July2021.Domain.Dto
         public string LastName { get; set; }
         public string Email { get; set; }
         public virtual ICollection<UserAssetDto> UserAssets { get; set; }
+        public virtual UserAddressDto UserAddress { get; set; }
     }
 }

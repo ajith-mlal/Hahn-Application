@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityofWork.ApplicationProcess.July2021.Data.Entities;
+using Hahn.ApplicationProcess.July2021.Data.Entities;
 
-namespace UnityofWork.ApplicationProcess.July2021.Data.Services
+namespace Hahn.ApplicationProcess.July2021.Data.Services
 {
     public interface IUserProfileRepository : IGenericRepository<UserProfile>
     {

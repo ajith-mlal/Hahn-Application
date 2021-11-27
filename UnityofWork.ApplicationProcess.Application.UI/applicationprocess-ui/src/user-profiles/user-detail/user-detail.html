@@ -1,54 +1,82 @@
 <template>
     <h1>User Assets</h1>
-    <div class="row"><h3>User Details</h3></div>
     <div class="row">
-        <div class="col-3">First Name</div>
-        <div class="col-3">${userdata.firstName}</div>
-        <div class="col-3">Last Name</div>
-        <div class="col-3">${userdata.lastName}</div>
+        <h3>User Details</h3>
     </div>
+    <div class="card">
+        <div class="=card-body">
+            <div class="row">
+                <div class="col-3">First Name</div>
+                <div class="col-3">${userdata.firstName}</div>
+                <div class="col-3">Last Name</div>
+                <div class="col-3">${userdata.lastName}</div>
+            </div>
+            <div class="row">
+        
+                <div class="col-3">Age</div>
+                <div class="col-3">${userdata.age}</div>
+                <div class="col-3">Email</div>
+                <div class="col-3">${userdata.email}</div>
+            </div>
+            <div class="row">
+        
+                <div class="col-3">Address Line 1</div>
+                <div class="col-3">${userdata.userAddress.addressLine1}</div>
+                <div class="col-3">Address Line 2</div>
+                <div class="col-3">${userdata.userAddress.addressLine2}</div>
+            </div>
+            <div class="row">
+        
+                <div class="col-3">Address Line 3</div>
+                <div class="col-3">${userdata.userAddress.addressLine3}</div>
+                <div class="col-3">Postal Code</div>
+                <div class="col-3">${userdata.userAddress.postalCode}</div>
+            </div>
+        </div>
+    </div>
+    
     <div class="row">
+        <h3>Asset Details</h3>
+    </div>
+    <div class="card" repeat.for="data of userdata.assets">
+        <div class="card-body">
+            <div class="row" >
+                <div class="row">
+                    <div class="col-3">id</div>
+                    <div class="col-3">${data.id}</div>
+                    <div class="col-3">rank</div>
+                    <div class="col-3">${data.rank}</div>
 
-        <div class="col-3">Age</div>
-        <div class="col-3">${userdata.age}</div>
-        <div class="col-3">Email</div>
-        <div class="col-3">${userdata.email}</div>
-    </div>
-    <div class="row"><h3>Asset Details</h3></div>
-    <div class="row" repeat.for="data of userdata.assets">
-        <div class="row">
-            <div class="col-3">id</div>
-            <div class="col-3">${data.id}</div>
-            <div class="col-3">rank</div>
-            <div class="col-3">${data.rank}</div>
-            
-        </div>
-        <div class="row">
-            <div class="col-3">symbol</div>
-            <div class="col-3">${data.symbol}</div>
-            <div class="col-3">market cap usd</div>
-            <div class="col-3">${data.marketCapUsd}</div>
-            
-        </div>
-        <div class="row">
-            <div class="col-3">max suppy</div>
-            <div class="col-3">${data.maxSupply}</div>
-            <div class="col-3">name</div>
-            <div class="col-3">${data.name}</div>
-            
-        </div>
-        <div class="row">
-            <div class="col-3">price usd</div>
-            <div class="col-3">${data.priceUsd}</div>
-            <div class="col-3">suppy</div>
-            <div class="col-3">${data.supply}</div>
-            
-        </div>
-        <div class="row">
-            <div class="col-3">volume usd 24 hr</div>
-            <div class="col-3">${data.volumeUsd24Hr}</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">symbol</div>
+                    <div class="col-3">${data.symbol}</div>
+                    <div class="col-3">market cap usd</div>
+                    <div class="col-3">${data.marketCapUsd}</div>
+
+                </div>
+                <div class="row">
+                    <div class="col-3">max suppy</div>
+                    <div class="col-3">${data.maxSupply}</div>
+                    <div class="col-3">name</div>
+                    <div class="col-3">${data.name}</div>
+
+                </div>
+                <div class="row">
+                    <div class="col-3">price usd</div>
+                    <div class="col-3">${data.priceUsd}</div>
+                    <div class="col-3">suppy</div>
+                    <div class="col-3">${data.supply}</div>
+
+                </div>
+                <div class="row">
+                    <div class="col-3">volume usd 24 hr</div>
+                    <div class="col-3">${data.volumeUsd24Hr}</div>
+                </div>
+            </div>
         </div>
     </div>
+
 
 
 </template>

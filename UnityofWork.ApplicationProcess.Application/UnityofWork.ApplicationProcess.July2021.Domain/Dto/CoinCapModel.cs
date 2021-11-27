@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnityofWork.ApplicationProcess.July2021.Domain.Models
+namespace Hahn.ApplicationProcess.July2021.Domain.Models
 {
     public class CoinCapModel
     {

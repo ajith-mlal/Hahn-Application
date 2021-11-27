@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace UnityofWork.ApplicationProcess.July2021.Data.Services
+namespace Hahn.ApplicationProcess.July2021.Data.Services
 {
     public interface IGenericRepository<T> where T : class
     {

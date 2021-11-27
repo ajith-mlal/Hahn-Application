@@ -10,16 +10,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["UnityofWork.ApplicationProcess.July2021.Web/UnityofWork.ApplicationProcess.July2021.Web.csproj", "UnityofWork.ApplicationProcess.July2021.Web/"]
-RUN dotnet restore "UnityofWork.ApplicationProcess.July2021.Web/UnityofWork.ApplicationProcess.July2021.Web.csproj"
+COPY ["Hahn.ApplicationProcess.July2021.Web/Hahn.ApplicationProcess.July2021.Web.csproj", "Hahn.ApplicationProcess.July2021.Web/"]
+RUN dotnet restore "Hahn.ApplicationProcess.July2021.Web/Hahn.ApplicationProcess.July2021.Web.csproj"
 COPY . .
-WORKDIR "/src/UnityofWork.ApplicationProcess.July2021.Web"
-RUN dotnet build "UnityofWork.ApplicationProcess.July2021.Web.csproj" -c Release -o /app/build
+WORKDIR "/src/Hahn.ApplicationProcess.July2021.Web"
+RUN dotnet build "Hahn.ApplicationProcess.July2021.Web.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "UnityofWork.ApplicationProcess.July2021.Web.csproj" -c Release -o /app/publish
+RUN dotnet publish "Hahn.ApplicationProcess.July2021.Web.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "UnityofWork.ApplicationProcess.July2021.Web.dll"]
+ENTRYPOINT ["dotnet", "Hahn.ApplicationProcess.July2021.Web.dll"]

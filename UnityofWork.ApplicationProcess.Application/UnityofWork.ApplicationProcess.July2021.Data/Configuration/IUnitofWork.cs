@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using UnityofWork.ApplicationProcess.July2021.Data.Services;
+using Hahn.ApplicationProcess.July2021.Data.Services;
 
-namespace UnityofWork.ApplicationProcess.July2021.Data.Configuration
+namespace Hahn.ApplicationProcess.July2021.Data.Configuration
 {
     public interface IUnitofWork
     {

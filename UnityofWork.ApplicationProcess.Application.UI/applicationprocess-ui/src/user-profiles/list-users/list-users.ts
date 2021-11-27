@@ -18,6 +18,7 @@ export class ListUsers {
           .then(response => response.json())
           .then(data => {
             this.userdata=data;
+            
           });
         
       }

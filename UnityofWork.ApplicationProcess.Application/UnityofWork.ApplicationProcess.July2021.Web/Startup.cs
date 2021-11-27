@@ -5,17 +5,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using UnityofWork.ApplicationProcess.July2021.Data.Configuration;
-using UnityofWork.ApplicationProcess.July2021.Data.Data;
-using UnityofWork.ApplicationProcess.July2021.Data.Entities;
-using UnityofWork.ApplicationProcess.July2021.Domain.Interfaces;
-using UnityofWork.ApplicationProcess.July2021.Domain.Validators;
-using UnityofWork.ApplicationProcess.July2021.Domain.Dto ;
+using Hahn.ApplicationProcess.July2021.Data.Configuration;
+using Hahn.ApplicationProcess.July2021.Data.Data;
+using Hahn.ApplicationProcess.July2021.Data.Entities;
+using Hahn.ApplicationProcess.July2021.Domain.Interfaces;
+using Hahn.ApplicationProcess.July2021.Domain.Validators;
+using Hahn.ApplicationProcess.July2021.Domain.Dto ;
 using FluentValidation.AspNetCore;
 using FluentValidation;
 using AutoMapper;
 
-namespace UnityofWork.ApplicationProcess.July2021.Web
+namespace Hahn.ApplicationProcess.July2021.Web
 {
     public class Startup
     {
@@ -56,7 +56,7 @@ namespace UnityofWork.ApplicationProcess.July2021.Web
             services.AddCors();
             services.AddScoped<IUnitofWork, UnitOfWork>();
             services.AddScoped<IApiClient, ApiClient>();
-            services.AddScoped<IValidator<UserProfile>, UserProfileValidator>();
+            services.AddScoped<IValidator<UserProfileDto>, UserProfileValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -99,6 +99,7 @@ namespace UnityofWork.ApplicationProcess.July2021.Web
             {
                 CreateMap<UserProfileDto, UserProfile>();
                 CreateMap<UserAssetDto, UserAssets>();
+                CreateMap<UserAddressDto, UserAddress>();
             }
         }
     }

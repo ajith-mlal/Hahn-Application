@@ -1,7 +1,5 @@
 <template>
-  <script src="https://rawgit.com/aurelia-ui-toolkits/demo-materialize/gh-pages/jspm_packages/system.js"></script>
-  <script src="https://rawgit.com/aurelia-ui-toolkits/demo-materialize/gh-pages/jspm.config.js"></script>
-  <h1>${message} Hi There</h1>
+  <h1> Hi There</h1>
   <ul repeat.for="nav of router.navigation">
     <li class="${nav.isActive?'active':''}"><a href.bind="nav.href">${nav.title}</a></li>
   </ul>

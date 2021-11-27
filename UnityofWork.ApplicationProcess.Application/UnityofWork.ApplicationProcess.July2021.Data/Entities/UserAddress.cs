@@ -1,17 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-
 namespace Hahn.ApplicationProcess.July2021.Data.Entities
 {
-    public class UserAssets
+    public class UserAddress
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int UserAssetId { get; set; }
+        public int AddressId { get; set; }
         [ForeignKey("UserProfile")]
         public int UserId { get; set; }
-        public string AssetId { get; set; }
-      
+        public string AddressLine1 { get; set; }
+        public string AddressLine2 { get; set; }
+        public string AddressLine3 { get; set; }
+        public string PostalCode { get; set; }
     }
 }

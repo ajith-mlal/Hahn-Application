@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using UnityofWork.ApplicationProcess.July2021.Data.Entities;
+using Hahn.ApplicationProcess.July2021.Data.Entities;
 
-namespace UnityofWork.ApplicationProcess.July2021.Data.Data
+namespace Hahn.ApplicationProcess.July2021.Data.Data
 {
 
     public class DBContext : DbContext
@@ -13,6 +13,7 @@ namespace UnityofWork.ApplicationProcess.July2021.Data.Data
 
         public virtual DbSet<UserProfile> UserProfiles { get; set; }
         public virtual DbSet<UserAssets> UserAssets { get; set; }
+        public virtual DbSet<UserAddress> UserAddress { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,6 +24,13 @@ namespace UnityofWork.ApplicationProcess.July2021.Data.Data
                     p.Property<int>("UserId");
                     p.HasKey("UserAssetId");
                 });
+            modelBuilder.Entity<UserProfile>()
+               .OwnsOne(r => r.UserAddress, p =>
+               {
+                   p.WithOwner().HasForeignKey("UserId");
+                   p.Property<int>("UserId");
+                   p.HasKey("AddressId");
+               });
             base.OnModelCreating(modelBuilder);
         }
     }

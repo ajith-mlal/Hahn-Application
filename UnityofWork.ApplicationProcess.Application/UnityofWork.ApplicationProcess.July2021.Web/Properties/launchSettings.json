@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "UnityofWork.ApplicationProcess.July2021.Web": {
+    "Hahn.ApplicationProcess.July2021.Web": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

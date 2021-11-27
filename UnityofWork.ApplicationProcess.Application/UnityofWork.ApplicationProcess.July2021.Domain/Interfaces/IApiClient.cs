@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityofWork.ApplicationProcess.July2021.Domain.Models;
+using Hahn.ApplicationProcess.July2021.Domain.Models;
 
-namespace UnityofWork.ApplicationProcess.July2021.Domain.Interfaces
+namespace Hahn.ApplicationProcess.July2021.Domain.Interfaces
 {
     public interface IApiClient
     {

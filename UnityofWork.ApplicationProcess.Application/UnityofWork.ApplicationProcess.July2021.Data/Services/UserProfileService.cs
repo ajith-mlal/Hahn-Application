@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityofWork.ApplicationProcess.July2021.Data.Data;
-using UnityofWork.ApplicationProcess.July2021.Data.Entities;
+using Hahn.ApplicationProcess.July2021.Data.Data;
+using Hahn.ApplicationProcess.July2021.Data.Entities;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 
-namespace UnityofWork.ApplicationProcess.July2021.Data.Services
+namespace Hahn.ApplicationProcess.July2021.Data.Services
 {
     public class UserProfileRepository : GenericRepository<UserProfile>, IUserProfileRepository
     {

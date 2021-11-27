@@ -26,6 +26,28 @@
         </div>
         <div class="row">
             <div class="col-6">
+                <div class="col-6">Address Line 1</div>
+                <div class="col-6"><input type="text" value.bind="addressLine1 & validate" placeholder="Address Line 1" id="addressLine1"></div>
+            </div>
+            <div class="col-6">
+                <div class="col-6">Address Line 2</div>
+                <div class="col-6"><input type="text" value.bind="addressLine2 & validate" placeholder="Address Line 2" id="addressLine2">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="col-6">Address Line 3</div>
+                <div class="col-6"><input type="text" value.bind="addressLine3 & validate" placeholder="Address Line 3" id="addressLine3"></div>
+            </div>
+            <div class="col-6">
+                <div class="col-6">Postal Code</div>
+                <div class="col-6"><input type="text" value.bind="postalCode & validate" placeholder="Postal Code" id="postalCode">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
                 <div class="col-6">Select Assets</div>
                 <div class=col-6><select multiple value.bind="selectedAssets">
                         <option repeat.for="data of coins" model.bind="data.id">
@@ -41,7 +63,7 @@
         </div>
         <div class="row">
             <div class="col-1">
-                <button type="submit" class="btn btn-primary">Create</button>
+                <button type="submit" disabled.bind="controller.errors.length>0" class="btn btn-primary">Create</button>
             </div>
         </div>
         </div>

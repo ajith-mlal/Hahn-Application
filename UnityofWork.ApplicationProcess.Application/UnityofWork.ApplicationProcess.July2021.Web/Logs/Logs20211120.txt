@@ -2,13 +2,13 @@
 2021-11-20 11:01:35.826 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:01:36.209 +05:30 [INF] Application started. Press Ctrl+C to shut down.
 2021-11-20 11:01:36.223 +05:30 [INF] Hosting environment: Development
-2021-11-20 11:01:36.236 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Web
+2021-11-20 11:01:36.236 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\Hahn.ApplicationProcess.July2021.Web
 2021-11-20 11:01:36.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/weatherforecast - -
-2021-11-20 11:01:36.483 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:01:36.553 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (UnityofWork.ApplicationProcess.July2021.Web).
-2021-11-20 11:01:36.607 +05:30 [INF] Executing ObjectResult, writing value of type 'UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast[]'.
-2021-11-20 11:01:36.777 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 176.7211ms
-2021-11-20 11:01:36.824 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:01:36.483 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:01:36.553 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Hahn.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (Hahn.ApplicationProcess.July2021.Web).
+2021-11-20 11:01:36.607 +05:30 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicationProcess.July2021.Web.WeatherForecast[]'.
+2021-11-20 11:01:36.777 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web) in 176.7211ms
+2021-11-20 11:01:36.824 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:01:36.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/weatherforecast - - - 200 - application/json;+charset=utf-8 598.2418ms
 2021-11-20 11:01:36.968 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/favicon.ico - -
 2021-11-20 11:01:36.988 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/favicon.ico - - - 404 - - 20.0227ms
@@ -26,11 +26,11 @@
 2021-11-20 11:01:41.413 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
 2021-11-20 11:01:41.584 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.1767ms
 2021-11-20 11:02:14.330 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 154
-2021-11-20 11:02:14.366 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:02:14.427 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:02:14.366 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:02:14.427 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:02:14.459 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
-2021-11-20 11:02:19.993 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web) in 5562.2666ms
-2021-11-20 11:02:19.997 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:02:19.993 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web) in 5562.2666ms
+2021-11-20 11:02:19.997 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:02:20.004 +05:30 [ERR] An unhandled exception has occurred while executing the request.
 Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: Y. Path '', line 0, position 0.
    at Newtonsoft.Json.JsonTextReader.ParseValue()
@@ -42,9 +42,9 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
    at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
    at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
    at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
-   at UnityofWork.ApplicationProcess.July2021.Domain.Interfaces.ApiClient.GetCoinCap() in C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Domain\Interfaces\ApiClient.cs:line 26
-   at UnityofWork.ApplicationProcess.July2021.Domain.Validators.UserProfileValidator.IsDuplicated(String coinid) in C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Domain\Validators\UserProfileValidator.cs:line 34
-   at UnityofWork.ApplicationProcess.July2021.Domain.Validators.UserProfileValidator.<.ctor>b__1_5(UserAssets coin, CancellationToken cancellation) in C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Domain\Validators\UserProfileValidator.cs:line 26
+   at Hahn.ApplicationProcess.July2021.Domain.Interfaces.ApiClient.GetCoinCap() in C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\Hahn.ApplicationProcess.July2021.Domain\Interfaces\ApiClient.cs:line 26
+   at Hahn.ApplicationProcess.July2021.Domain.Validators.UserProfileValidator.IsDuplicated(String coinid) in C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\Hahn.ApplicationProcess.July2021.Domain\Validators\UserProfileValidator.cs:line 34
+   at Hahn.ApplicationProcess.July2021.Domain.Validators.UserProfileValidator.<.ctor>b__1_5(UserAssets coin, CancellationToken cancellation) in C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\Hahn.ApplicationProcess.July2021.Domain\Validators\UserProfileValidator.cs:line 26
    at FluentValidation.Internal.CollectionPropertyRule`2.InvokePropertyValidatorAsync(ValidationContext`1 context, TElement value, String propertyName, RuleComponent`2 component, Int32 index, CancellationToken cancellation) in /media/jskinner/Linux2/code/FluentValidation/src/FluentValidation/Internal/CollectionPropertyRule.cs:line 379
    at FluentValidation.Internal.CollectionPropertyRule`2.FluentValidation.IValidationRuleInternal<T>.Validate(ValidationContext`1 context) in /media/jskinner/Linux2/code/FluentValidation/src/FluentValidation/Internal/CollectionPropertyRule.cs:line 168
    at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /media/jskinner/Linux2/code/FluentValidation/src/FluentValidation/AbstractValidator.cs:line 96
@@ -74,41 +74,41 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2021-11-20 11:02:20.223 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 154 - 500 - text/plain 5893.6591ms
 2021-11-20 11:02:30.749 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 154
-2021-11-20 11:02:30.761 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:02:30.765 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:02:30.761 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:02:30.765 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:02:30.778 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:02:30.975 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2021-11-20 11:02:30.989 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web) in 221.141ms
-2021-11-20 11:02:30.993 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:02:30.989 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web) in 221.141ms
+2021-11-20 11:02:30.993 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:02:30.997 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 154 - 400 - application/problem+json;+charset=utf-8 248.4200ms
 2021-11-20 11:02:59.617 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 158
-2021-11-20 11:02:59.632 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:02:59.648 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:02:59.632 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:02:59.648 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:02:59.658 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:02:59.890 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:02:59.896 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
-2021-11-20 11:02:59.899 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web) in 244.9019ms
-2021-11-20 11:02:59.905 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:02:59.899 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web) in 244.9019ms
+2021-11-20 11:02:59.905 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:02:59.909 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 158 - 200 - application/json;+charset=utf-8 292.0141ms
 2021-11-20 11:03:07.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - -
-2021-11-20 11:03:07.640 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:03:07.648 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:03:07.640 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:03:07.648 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:03:07.651 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
-2021-11-20 11:03:11.270 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile, UnityofWork.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2021-11-20 11:03:11.278 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 3627.6213ms
-2021-11-20 11:03:11.282 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:03:11.270 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile, Hahn.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-20 11:03:11.278 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web) in 3627.6213ms
+2021-11-20 11:03:11.282 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:03:11.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - - - 200 - application/json;+charset=utf-8 3650.3076ms
 2021-11-20 11:35:44.013 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:35:44.418 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:35:44.612 +05:30 [INF] Application started. Press Ctrl+C to shut down.
 2021-11-20 11:35:44.616 +05:30 [INF] Hosting environment: Development
-2021-11-20 11:35:44.619 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Web
+2021-11-20 11:35:44.619 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\Hahn.ApplicationProcess.July2021.Web
 2021-11-20 11:35:44.650 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/weatherforecast - -
-2021-11-20 11:35:44.751 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:35:44.785 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (UnityofWork.ApplicationProcess.July2021.Web).
-2021-11-20 11:35:44.799 +05:30 [INF] Executing ObjectResult, writing value of type 'UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast[]'.
-2021-11-20 11:35:44.849 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 54.4963ms
-2021-11-20 11:35:44.855 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:35:44.751 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:35:44.785 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Hahn.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (Hahn.ApplicationProcess.July2021.Web).
+2021-11-20 11:35:44.799 +05:30 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicationProcess.July2021.Web.WeatherForecast[]'.
+2021-11-20 11:35:44.849 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web) in 54.4963ms
+2021-11-20 11:35:44.855 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:35:44.876 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/weatherforecast - - - 200 - application/json;+charset=utf-8 228.7997ms
 2021-11-20 11:36:56.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
 2021-11-20 11:36:56.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 105.4326ms
@@ -135,28 +135,28 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
 2021-11-20 11:36:57.770 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
 2021-11-20 11:36:57.913 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.1402ms
 2021-11-20 11:37:10.505 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - -
-2021-11-20 11:37:10.516 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:37:10.525 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:37:10.516 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:37:10.525 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:37:10.556 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
-2021-11-20 11:37:10.906 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile, UnityofWork.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2021-11-20 11:37:10.914 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 385.4612ms
-2021-11-20 11:37:10.921 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:37:10.906 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile, Hahn.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-20 11:37:10.914 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web) in 385.4612ms
+2021-11-20 11:37:10.921 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:37:10.927 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - - - 200 - application/json;+charset=utf-8 420.9991ms
 2021-11-20 11:37:52.917 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 151
-2021-11-20 11:37:52.927 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:37:52.950 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:37:52.927 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:37:52.950 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:37:52.962 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:38:29.558 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:38:30.026 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:38:30.245 +05:30 [INF] Application started. Press Ctrl+C to shut down.
 2021-11-20 11:38:30.257 +05:30 [INF] Hosting environment: Development
-2021-11-20 11:38:30.261 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Web
+2021-11-20 11:38:30.261 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\Hahn.ApplicationProcess.July2021.Web
 2021-11-20 11:38:30.295 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/weatherforecast - -
-2021-11-20 11:38:30.387 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:38:30.426 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (UnityofWork.ApplicationProcess.July2021.Web).
-2021-11-20 11:38:30.444 +05:30 [INF] Executing ObjectResult, writing value of type 'UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast[]'.
-2021-11-20 11:38:30.504 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 67.5194ms
-2021-11-20 11:38:30.515 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:38:30.387 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:38:30.426 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Hahn.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (Hahn.ApplicationProcess.July2021.Web).
+2021-11-20 11:38:30.444 +05:30 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicationProcess.July2021.Web.WeatherForecast[]'.
+2021-11-20 11:38:30.504 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web) in 67.5194ms
+2021-11-20 11:38:30.515 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:38:30.548 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/weatherforecast - - - 200 - application/json;+charset=utf-8 256.1638ms
 2021-11-20 11:39:37.146 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
 2021-11-20 11:39:37.254 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 107.6764ms
@@ -172,76 +172,76 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
 2021-11-20 11:39:37.680 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
 2021-11-20 11:39:37.833 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 152.0025ms
 2021-11-20 11:40:30.897 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138
-2021-11-20 11:40:30.912 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:40:30.948 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:40:30.912 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:40:30.948 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:40:30.987 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:40:31.106 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:40:31.112 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
-2021-11-20 11:40:31.116 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web) in 163.8634ms
-2021-11-20 11:40:31.121 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:40:31.116 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web) in 163.8634ms
+2021-11-20 11:40:31.121 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:40:31.132 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138 - 200 - application/json;+charset=utf-8 235.4906ms
 2021-11-20 11:40:43.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - -
-2021-11-20 11:40:43.842 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:40:43.854 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:40:43.842 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:40:43.854 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:40:43.866 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
-2021-11-20 11:40:44.235 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile, UnityofWork.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2021-11-20 11:40:44.244 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 387.2487ms
-2021-11-20 11:40:44.249 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:40:44.235 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile, Hahn.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-20 11:40:44.244 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web) in 387.2487ms
+2021-11-20 11:40:44.249 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:40:44.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - - - 200 - application/json;+charset=utf-8 417.7617ms
 2021-11-20 11:41:28.811 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138
-2021-11-20 11:41:28.820 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:41:28.825 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:41:28.820 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:41:28.825 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:41:28.831 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:41:28.842 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:41:28.845 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
-2021-11-20 11:41:28.848 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web) in 19.9888ms
-2021-11-20 11:41:28.851 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:41:28.848 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web) in 19.9888ms
+2021-11-20 11:41:28.851 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:41:28.855 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138 - 200 - application/json;+charset=utf-8 45.9432ms
 2021-11-20 11:41:30.305 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138
-2021-11-20 11:41:30.308 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:41:30.312 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:41:30.308 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:41:30.312 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:41:30.316 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:41:30.320 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:41:30.324 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
-2021-11-20 11:41:30.327 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web) in 11.9858ms
-2021-11-20 11:41:30.330 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:41:30.327 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web) in 11.9858ms
+2021-11-20 11:41:30.330 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:41:30.333 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138 - 200 - application/json;+charset=utf-8 28.1342ms
 2021-11-20 11:41:40.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - -
-2021-11-20 11:41:40.471 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:41:40.476 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:41:40.471 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:41:40.476 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:41:40.487 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
-2021-11-20 11:41:40.511 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile, UnityofWork.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2021-11-20 11:41:40.514 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 28.0815ms
-2021-11-20 11:41:40.519 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:41:40.511 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile, Hahn.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-20 11:41:40.514 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web) in 28.0815ms
+2021-11-20 11:41:40.519 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:41:40.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - - - 200 - application/json;+charset=utf-8 71.0933ms
 2021-11-20 11:42:22.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - -
-2021-11-20 11:42:22.300 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:42:22.307 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:42:22.300 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:42:22.307 +05:30 [INF] Route matched with {action = "Get", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:42:22.310 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
-2021-11-20 11:42:22.319 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile, UnityofWork.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2021-11-20 11:42:22.322 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 12.1002ms
-2021-11-20 11:42:22.326 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:42:22.319 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile, Hahn.ApplicationProcess.July2021.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-20 11:42:22.322 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web) in 12.1002ms
+2021-11-20 11:42:22.326 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:42:22.331 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/api/UserProfile/GetEmployees - - - 200 - application/json;+charset=utf-8 40.5785ms
 2021-11-20 11:43:15.703 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138
-2021-11-20 11:43:15.710 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:43:15.714 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(UnityofWork.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController (UnityofWork.ApplicationProcess.July2021.Web).
+2021-11-20 11:43:15.710 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:43:15.714 +05:30 [INF] Route matched with {action = "CreateUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Hahn.ApplicationProcess.July2021.Data.Entities.UserProfile) on controller Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController (Hahn.ApplicationProcess.July2021.Web).
 2021-11-20 11:43:15.720 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:43:15.753 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:43:15.756 +05:30 [INF] Executing JsonResult, writing value of type 'System.String'.
-2021-11-20 11:43:15.759 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web) in 42.0803ms
-2021-11-20 11:43:15.770 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:43:15.759 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web) in 42.0803ms
+2021-11-20 11:43:15.770 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.UserProfileController.CreateUser (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:43:15.773 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44344/api/UserProfile/CreateUser application/json 138 - 200 - application/json;+charset=utf-8 70.9366ms
 2021-11-20 11:44:44.854 +05:30 [INF] Entity Framework Core 5.0.12 initialized 'DBContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=TestApp 
 2021-11-20 11:44:45.433 +05:30 [INF] Saved 2 entities to in-memory store.
 2021-11-20 11:44:45.702 +05:30 [INF] Application started. Press Ctrl+C to shut down.
 2021-11-20 11:44:45.707 +05:30 [INF] Hosting environment: Development
-2021-11-20 11:44:45.711 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\UnityofWork.ApplicationProcess.July2021.Web
+2021-11-20 11:44:45.711 +05:30 [INF] Content root path: C:\Projects\UnityofWork\UnityofWork.ApplicationProcess.Application\Hahn.ApplicationProcess.July2021.Web
 2021-11-20 11:44:45.747 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/weatherforecast - -
-2021-11-20 11:44:45.858 +05:30 [INF] Executing endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
-2021-11-20 11:44:45.896 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (UnityofWork.ApplicationProcess.July2021.Web).
-2021-11-20 11:44:45.915 +05:30 [INF] Executing ObjectResult, writing value of type 'UnityofWork.ApplicationProcess.July2021.Web.WeatherForecast[]'.
-2021-11-20 11:44:45.994 +05:30 [INF] Executed action UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web) in 83.5174ms
-2021-11-20 11:44:46.022 +05:30 [INF] Executed endpoint 'UnityofWork.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (UnityofWork.ApplicationProcess.July2021.Web)'
+2021-11-20 11:44:45.858 +05:30 [INF] Executing endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
+2021-11-20 11:44:45.896 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Hahn.ApplicationProcess.July2021.Web.WeatherForecast] Get() on controller Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController (Hahn.ApplicationProcess.July2021.Web).
+2021-11-20 11:44:45.915 +05:30 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicationProcess.July2021.Web.WeatherForecast[]'.
+2021-11-20 11:44:45.994 +05:30 [INF] Executed action Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web) in 83.5174ms
+2021-11-20 11:44:46.022 +05:30 [INF] Executed endpoint 'Hahn.ApplicationProcess.July2021.Web.Controllers.WeatherForecastController.Get (Hahn.ApplicationProcess.July2021.Web)'
 2021-11-20 11:44:46.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/weatherforecast - - - 200 - application/json;+charset=utf-8 335.7157ms
 2021-11-20 11:45:04.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
 2021-11-20 11:45:04.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 137.5851ms

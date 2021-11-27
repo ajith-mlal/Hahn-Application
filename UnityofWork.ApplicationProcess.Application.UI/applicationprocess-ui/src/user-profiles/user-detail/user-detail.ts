@@ -1,7 +1,6 @@
 
 import { HttpClient, json } from 'aurelia-fetch-client';
 import { Router } from 'aurelia-router';
-import { First } from 'react-bootstrap/esm/PageItem';
 
 export class UserDetail {
     httpClientNew = null;
@@ -11,7 +10,6 @@ export class UserDetail {
     constructor(private router: Router) {
         this.httpClientNew = new HttpClient();
         this.getCoins();
-        //this.getUserDetails()
     }
 
 
@@ -25,22 +23,22 @@ export class UserDetail {
           .then(response => response.json())
           .then(data => {
             this.coins=data.data;
-           // console.log(this.coins);
+
           });
          
       }
 
     async getUserDetails() {
-        await this.httpClientNew.fetch('https://localhost:44344/api/UserProfile/GetEmployee?userId='+this.userId)
+        await this.httpClientNew.fetch('https://localhost:44344/api/UserProfile/GetUser?userId='+this.userId)
             .then(response => response.json())
             .then(data => {
                 this.userdata = data;
-                //console.log(this.userdata);
+                console.log(this.userdata);
             });
             this.userdata.assets=[];
-            //console.log(this.userdata);
+
             for(var userass in this.userdata.userAssets){
-                //console.log(this.userdata.userAssets[userass]);
+
                 var userasset=this.coins.filter(p=>p.id==this.userdata.userAssets[userass].assetId);
                 
                 this.userdata.assets.push(userasset[0]);

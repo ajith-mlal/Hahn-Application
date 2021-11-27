@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnityofWork.ApplicationProcess.July2021.Domain.Dto
+namespace Hahn.ApplicationProcess.July2021.Domain.Dto
 {
     public class UserAssetDto
     {

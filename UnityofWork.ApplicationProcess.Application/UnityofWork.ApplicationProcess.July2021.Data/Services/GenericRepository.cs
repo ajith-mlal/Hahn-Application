@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using UnityofWork.ApplicationProcess.July2021.Data.Data;
+using Hahn.ApplicationProcess.July2021.Data.Data;
 
-namespace UnityofWork.ApplicationProcess.July2021.Data.Services
+namespace Hahn.ApplicationProcess.July2021.Data.Services
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

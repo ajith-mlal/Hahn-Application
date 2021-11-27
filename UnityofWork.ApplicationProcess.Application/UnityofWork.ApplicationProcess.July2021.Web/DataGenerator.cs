@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UnityofWork.ApplicationProcess.July2021.Data.Data;
+using Hahn.ApplicationProcess.July2021.Data.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 using Microsoft.EntityFrameworkCore;
 
-namespace UnityofWork.ApplicationProcess.July2021.Web
+namespace Hahn.ApplicationProcess.July2021.Web
 {
     public class DataGenerator
     {

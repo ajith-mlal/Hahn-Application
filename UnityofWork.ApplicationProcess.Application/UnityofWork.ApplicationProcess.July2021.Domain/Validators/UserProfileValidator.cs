@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation;
-using UnityofWork.ApplicationProcess.July2021.Data.Entities;
-using UnityofWork.ApplicationProcess.July2021.Domain.Interfaces;
-using FluentValidation.Validators;
-namespace UnityofWork.ApplicationProcess.July2021.Domain.Validators
+using Hahn.ApplicationProcess.July2021.Domain.Dto;
+using Hahn.ApplicationProcess.July2021.Domain.Interfaces;
+
+namespace Hahn.ApplicationProcess.July2021.Domain.Validators
 {
-    public class UserProfileValidator : AbstractValidator<UserProfile>
+    public class UserProfileValidator : AbstractValidator<UserProfileDto>
     {
         public readonly IApiClient _apiclient;
         public UserProfileValidator( IApiClient apiclient)

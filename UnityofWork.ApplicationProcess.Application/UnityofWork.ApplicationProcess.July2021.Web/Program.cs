@@ -4,13 +4,13 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using Microsoft.Extensions.DependencyInjection;
-using UnityofWork.ApplicationProcess.July2021.Data.Data;
+using Hahn.ApplicationProcess.July2021.Data.Data;
 using Serilog;
 using Serilog.Formatting.Compact;
-using UnityofWork.ApplicationProcess.July2021.Web.Configurations;
+using Hahn.ApplicationProcess.July2021.Web.Configurations;
 
 
-namespace UnityofWork.ApplicationProcess.July2021.Web
+namespace Hahn.ApplicationProcess.July2021.Web
 {
     public class Program
     {
