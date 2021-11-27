@@ -2,27 +2,21 @@ import { inject, NewInstance } from 'aurelia-dependency-injection';
 import { ValidationController, validateTrigger } from 'aurelia-validation';
 import { ValidationRules } from 'aurelia-validation'
 import { HttpClient, json } from 'aurelia-fetch-client';
-
+import { UserModel,UserAssetsModel } from '../models/user-model';
+import {Router} from 'aurelia-router';
 
 @inject(NewInstance.of(ValidationController))
-
+@inject(NewInstance.of(Router))
 export class AddUser {
+  usermodel: UserModel=new UserModel();
 
-  firstName = '';
-  lastName = '';
-  age: number;
-  email = '';
-  addressLine1 = '';
-  addressLine2 = '';
-  addressLine3 = '';
-  postalCode = '';
   controller = null;
   httpClient = null;
   httpClientNew = null;
   coins;
   selectedAssets: any = [];
 
-  constructor(controller) {
+  constructor(controller,_router:Router) {
     let http = new HttpClient();
     let httpnew = new HttpClient();
 
@@ -36,56 +30,47 @@ export class AddUser {
 
     ValidationRules
       .ensure('firstName').required().minLength(3).withMessage('First Name must at least be 3 chars long.')
-      .ensure('lastName').required().minLength(3).withMessage('Last Name must at least be 3 chars long.')
+       .ensure('lastName').required().minLength(3).withMessage('Last Name must at least be 3 chars long.')
       .ensure('age').required().min(18).withMessage('Age must be atleast 18')
       .ensure('email').required().email().withMessage('Email must be valid')
-      .ensure('addressLine1').required().withMessage('Address Line 1 cannot be empty.')
-      .ensure('addressLine2').required().withMessage('Address Line 2 cannot be empty.')
-      .ensure('addressLine3').required().withMessage('Address Line 3 cannot be empty.')
-      .ensure('postalCode').required().withMessage('Postal Code cannot be empty.')
-      .on(this);
+      .ensure('userAddress.addressLine1').required().withMessage('Address Line 1 cannot be empty.')
+      .ensure('userAddress.addressLine2').required().withMessage('Address Line 2 cannot be empty.')
+      .ensure('userAddress.addressLine3').required().withMessage('Address Line 3 cannot be empty.')
+      .ensure('userAddress.postalCode').required().withMessage('Postal Code cannot be empty.') 
+      .on(this.usermodel);
+
 
     this.getCoins();
   }
 
-  onReset(){
-
+  onReset() {
+    this.controller.reset();
+    this.usermodel=new UserModel();
   }
 
   createUser() {
 
-    var myUser = {
-      firstName: this.firstName,
-      lastName: this.lastName,
-      email: this.email,
-      age: this.age,
-      userAssets: [],
-      userAddress: {
-        addressLine1: this.addressLine1,
-        addressLine2: this.addressLine2,
-        addressLine3: this.addressLine3,
-        postalCode: this.postalCode
-      }
-    }
+    this.usermodel.userAssets=[];
 
-    this.selectedAssets.forEach(element => {
-      let item = new UserAsset();
+    this.usermodel.selectedAssets.forEach(element => {
+      let item = new UserAssetsModel();
       item.assetId = element;
-      myUser.userAssets.push(item);
+
+      this.usermodel.userAssets.push(item)
     });
 
+    console.log(this.usermodel);
 
-    this.httpClient.fetch('https://localhost:44344/api/userprofile/createuser',
-      {
-        // mode: "no-cors",
-        method: 'post',
-        body: json(myUser),
-        headers: {
-          "content-type": "application/json; charset=utf-8"
-        }
-      }).then(data => {
-
-      });
+     this.httpClient.fetch('https://localhost:44344/api/userprofile/createuser',
+       {
+         method: 'post',
+         body: json(this.usermodel),
+         headers: {
+           "content-type": "application/json; charset=utf-8"
+         }
+       }).then(data => {
+        this.usermodel=new UserModel();
+       });
   };
 
   async getCoins() {
@@ -94,12 +79,6 @@ export class AddUser {
       .then(data => {
         this.coins = data.data;
       });
-
   }
 
-
-}
-
-export class UserAsset {
-  assetId: any;
 }

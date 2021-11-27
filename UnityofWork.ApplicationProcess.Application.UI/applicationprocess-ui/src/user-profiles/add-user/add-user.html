@@ -1,55 +1,63 @@
 <template>
-    <h1>Add new User</h1>
+    <div class="row">
+        <div class="col-11">
+            <h1>Add New User</h1>
+        </div>
+        <div class="col-1">
+           
+        </div>
+    </div>
+    
     <form role="form" submit.delegate="createUser()">
         <div class="row">
             <div class="col-6">
                 <div class="col-6">First Name</div>
-                <div class="col-6"><input type="text" value.bind="firstName & validate" placeholder="First Name"
+                <div class="col-6"><input type="text" value.bind="usermodel.firstName & validate" placeholder="First Name"
                         id="firstName"></div>
             </div>
             <div class="col-6">
                 <div class="col-6">Last Name</div>
                 <div class="col-6"><input class="${validate ? 'border border-primary' : ''}" type="text"
-                        value.bind="lastName & validate" placeholder="Last Name" id="lastName"></div>
+                        value.bind="usermodel.lastName & validate" placeholder="Last Name" id="lastName"></div>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <div class="col-6">Age</div>
-                <div class="col-6"><input type="text" value.bind="age & validate" placeholder="Age" id="age"></div>
+                <div class="col-6"><input type="text" value.bind="usermodel.age & validate" placeholder="Age" id="age"></div>
             </div>
             <div class="col-6">
                 <div class="col-6">Email</div>
-                <div class="col-6"><input type="text" value.bind="email & validate" placeholder="Email" id="email">
+                <div class="col-6"><input type="text" value.bind="usermodel.email & validate" placeholder="Email" id="email">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <div class="col-6">Address Line 1</div>
-                <div class="col-6"><input type="text" value.bind="addressLine1 & validate" placeholder="Address Line 1" id="addressLine1"></div>
+                <div class="col-6"><input type="text" value.bind="usermodel.userAddress.addressLine1 & validate" placeholder="Address Line 1" id="addressLine1"></div>
             </div>
             <div class="col-6">
                 <div class="col-6">Address Line 2</div>
-                <div class="col-6"><input type="text" value.bind="addressLine2 & validate" placeholder="Address Line 2" id="addressLine2">
+                <div class="col-6"><input type="text" value.bind="usermodel.userAddress.addressLine2 & validate" placeholder="Address Line 2" id="addressLine2">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <div class="col-6">Address Line 3</div>
-                <div class="col-6"><input type="text" value.bind="addressLine3 & validate" placeholder="Address Line 3" id="addressLine3"></div>
+                <div class="col-6"><input type="text" value.bind="usermodel.userAddress.addressLine3 & validate" placeholder="Address Line 3" id="addressLine3"></div>
             </div>
             <div class="col-6">
                 <div class="col-6">Postal Code</div>
-                <div class="col-6"><input type="text" value.bind="postalCode & validate" placeholder="Postal Code" id="postalCode">
+                <div class="col-6"><input type="text" value.bind="usermodel.userAddress.postalCode & validate" placeholder="Postal Code" id="postalCode">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
                 <div class="col-6">Select Assets</div>
-                <div class=col-6><select multiple value.bind="selectedAssets">
+                <div class=col-6><select multiple value.bind="usermodel.selectedAssets">
                         <option repeat.for="data of coins" model.bind="data.id">
                             ${data.symbol} - ${data.name}
                         </option>
@@ -58,12 +66,12 @@
 
             <div class="col-6">
                 <div class="col-6">Selected product IDs</div>
-                <div class="col-6">${selectedAssets}</div>
+                <div class="col-6">${usermodel.selectedAssets}</div>
             </div>
         </div>
         <div class="row">
             <div class="col-1">
-                <button  class="btn btn-secondary">Reset</button>
+                <button click.delegate="onReset()" class="btn btn-secondary">Reset</button>
             </div>
             <div class="col-1">
                 <button type="submit" disabled.bind="controller.errors.length>0" class="btn btn-primary">Submit</button>

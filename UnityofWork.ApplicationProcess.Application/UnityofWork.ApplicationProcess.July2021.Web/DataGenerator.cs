@@ -36,6 +36,21 @@ namespace Hahn.ApplicationProcess.July2021.Web
                     AssetId = "tether"
                 });
 
+                var address1 = new Data.Entities.UserAddress()
+                {
+                    AddressLine1 = "xyz",
+                    AddressLine2 = "abc",
+                    AddressLine3 = "123",
+                    PostalCode = "245346"
+                };
+                var address2 = new Data.Entities.UserAddress()
+                {
+                    AddressLine1 = "wer",
+                    AddressLine2 = "ghj",
+                    AddressLine3 = "456",
+                    PostalCode = "86786"
+                };
+
                 context.UserProfiles.AddRange(
                     new Data.Entities.UserProfile
                     {
@@ -43,7 +58,8 @@ namespace Hahn.ApplicationProcess.July2021.Web
                         Email = "jondoe@email.com",
                         FirstName = "Jon",
                         LastName = "Doe",
-                        UserAssets=assets1
+                        UserAssets=assets1,
+                        UserAddress=address1
                     },
                     new Data.Entities.UserProfile
                     {
@@ -51,7 +67,8 @@ namespace Hahn.ApplicationProcess.July2021.Web
                         Email = "markantony@email.com",
                         FirstName = "Mark",
                         LastName = "Antony",
-                        UserAssets=assets2
+                        UserAssets=assets2,
+                        UserAddress=address2
                     }
 
 

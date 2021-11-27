@@ -1,13 +1,12 @@
 
 import { HttpClient, json } from 'aurelia-fetch-client';
-import { Router } from 'aurelia-router';
 
 export class UserDetail {
     httpClientNew = null;
     userdata = null;
     userId = 0;
     coins=null;
-    constructor(private router: Router) {
+    constructor() {
         this.httpClientNew = new HttpClient();
         this.getCoins();
     }
@@ -33,7 +32,7 @@ export class UserDetail {
             .then(response => response.json())
             .then(data => {
                 this.userdata = data;
-                console.log(this.userdata);
+
             });
             this.userdata.assets=[];
 
@@ -42,7 +41,7 @@ export class UserDetail {
                 var userasset=this.coins.filter(p=>p.id==this.userdata.userAssets[userass].assetId);
                 
                 this.userdata.assets.push(userasset[0]);
-                console.log(this.userdata);
+
             }
 
     }
