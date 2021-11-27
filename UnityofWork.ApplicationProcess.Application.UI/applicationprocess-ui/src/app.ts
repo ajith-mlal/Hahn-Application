@@ -12,11 +12,11 @@ export class App {
         moduleId: PLATFORM.moduleName('./user-profiles/add-user/add-user'), nav: true, title: 'AddUser', href: '#add-user'
       },
       {
-        route: ['', 'list-users'], name: 'list',
+        route: ['','list-users'], name: 'list',
         moduleId: PLATFORM.moduleName('./user-profiles/list-users/list-users'), nav: true, title: 'ListUser', href: '#list-users'
       },
       {
-        route: ['', 'user-detail/:id'], name: 'detail',
+        route: 'user-detail/:id', name: 'detail',
         moduleId: PLATFORM.moduleName('./user-profiles/user-detail/user-detail'), nav: true, title: 'UserDetail', href: '#user-detail'
       },
 

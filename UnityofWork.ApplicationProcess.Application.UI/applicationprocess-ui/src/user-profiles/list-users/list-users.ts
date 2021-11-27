@@ -24,6 +24,7 @@ export class ListUsers {
       }
 
       onAdd($event){
+        console.log(this.router)
         this.router.navigateToRoute('add');
       }
 }

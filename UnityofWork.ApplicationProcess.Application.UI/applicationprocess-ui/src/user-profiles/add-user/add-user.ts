@@ -21,6 +21,7 @@ export class AddUser {
   httpClientNew = null;
   coins;
   selectedAssets: any = [];
+
   constructor(controller) {
     let http = new HttpClient();
     let httpnew = new HttpClient();
@@ -29,7 +30,7 @@ export class AddUser {
 
 
     this.controller = controller;
-    //this.httpClient = http;
+
     this.httpClientNew = httpnew;
 
 
@@ -47,7 +48,9 @@ export class AddUser {
     this.getCoins();
   }
 
+  onReset(){
 
+  }
 
   createUser() {
 

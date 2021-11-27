@@ -15,4 +15,5 @@ export function configure(aurelia: Aurelia): void {
   }
 
   aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app')));
+  //aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('user-profiles/list-users/list-users')));
 }
