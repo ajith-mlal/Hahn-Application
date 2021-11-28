@@ -37,7 +37,7 @@ namespace Hahn.ApplicationProcess.July2021.Web
             services.AddControllers().AddFluentValidation(s =>
             {
                 s.RegisterValidatorsFromAssemblyContaining<Startup>();
-                //s.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
+              
             });
             services.AddAutoMapper(System.AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
